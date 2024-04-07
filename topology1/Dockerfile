@@ -1,5 +1,5 @@
 # Use an official Python 2.7 slim image as a base
-FROM python:2.7-slim
+FROM python:3
 
 # Create a directory for the topology1.py
 WORKDIR /app
