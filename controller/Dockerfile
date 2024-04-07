@@ -1,5 +1,5 @@
 # Use an official Python 2.7 slim image as a base
-FROM python:2.7-slim
+FROM python:3
 
 # Install necessary dependencies for Ryu SDN Controller
 RUN apt-get update && \
@@ -8,6 +8,8 @@ RUN apt-get update && \
     libssl-dev \
     python-dev \
     && rm -rf /var/lib/apt/lists/*
+
+RUN python3 -m pip install --upgrade pip
 
 RUN pip install ryu
 
