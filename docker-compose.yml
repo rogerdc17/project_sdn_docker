@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  controller:
+    build: ./controller
+    container_name: ryu_controller
+
+  topology1:
+    build: ./topology1
+    container_name: topology1_container
+
+  topology2:
+    build: ./topology2
+    container_name: topology2_container
