@@ -8,7 +8,11 @@ services:
   topology1:
     build: ./topology1
     container_name: topology1_container
+    environment:
+      - CONTROLLER_ADDR=ryu_controller
 
   topology2:
     build: ./topology2
     container_name: topology2_container
+    environment:
+      - CONTROLLER_ADDR=ryu_controller
